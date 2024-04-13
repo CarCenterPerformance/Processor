@@ -69,12 +69,12 @@ Citizen.CreateThread(function()
                     
                                 TaskPlayAnim(PlayerPedId(), 'mini@repair', 'fixing_a_ped', 8.0, -8.0, -1, 1, 1.0, false, false, false)
                             else
-                                TriggerEvent('nimmersatt:notify', 2, 'ERROR', 'Dein Rucksack ist voll!!', 5000)
+                                ESX.ShowNotification('Dein Rucksack ist Voll!!')
                                 notification = false
                                 ClearPedTasks(ped) 
                             end
                         else
-                            TriggerEvent('nimmersatt:notify', 2, 'ERROR', 'Du hast nicht genug Materialien', 5000)
+                                ESX.ShowNotification('Du hast nicht genug Materialien')
                             notification = false
                             ClearPedTasks(ped) 
                         end
@@ -137,7 +137,7 @@ Citizen.CreateThread(function()
                 if cb then
                     TriggerServerEvent('fabian_verarbeiter:check', itembekommensoll, itemcheck)
                 else
-                    TriggerEvent('nimmersatt:notify', 2, 'ERROR', 'Du hast nicht genug Materialien', 5000)
+                        ESX.ShowNotification('Du hast nicht genug Materialien')
                     ClearPedTasks(PlayerPedId())
                     verarbeiter = false
                 end
