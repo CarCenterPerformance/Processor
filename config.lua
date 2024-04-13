@@ -16,16 +16,16 @@ Config.verarbeiter = {
     },
 
     ['Kupfer'] = {
-        coords = vector3(2339.2756, 3054.1482, 48.1518),
-        item = "kupfererz",
-        itemverarbeitet = "kupferbarren",
+        coords = vector3(2339.2756, 3054.1482, 48.1518), --Location from the processor
+        item = "kupfererz", --Item what you need
+        itemverarbeitet = "kupferbarren", --Item what you get
         blip = {
-            enabled = true,
-            sprite = 237,
-            display = 2,
-            scale = 0.7,
+            enabled = true, -- Blip on/off (true= on / false = off)
+            sprite = 237, 
+            display = 2, 
+            scale = 0.7, 
             color = 41,
-            text = "Kupfer Verarbeiter"
+            text = "Kupfer Verarbeiter" --Blip Name
         }
     },
     ['Oil'] = {
@@ -43,11 +43,15 @@ Config.verarbeiter = {
     }
 }
 
-Config.Ped = true
+Config.Ped = true -- If you want to use NPCs leave it on, if not set it to false
 
 Config.Npc = {
-    {2339.2756, 3054.1482, 48.1518, nil, 251.8272, nil, -1395868234}, --Kupfer
-    {597.2090, 2928.9243, 40.9165, nil, 47.9226, nil, -1395868234} -- Öl 
+    {2339.2756, 3054.1482, 48.1518, nil, 251.8272, nil, -1395868234}, --Kupfer NPC
+    {597.2090, 2928.9243, 40.9165, nil, 47.9226, nil, -1395868234} -- Öl NPC
 }
+
+
+
+
 
 
